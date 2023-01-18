@@ -8,6 +8,10 @@ pipeline:
       - npm install
       - ls node_modules
       - npm run build
-
+  deploy:
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    commands:
+      - ls
 branches:
   include: [ main, feature/* ]
