@@ -1,0 +1,9 @@
+pipeline:
+  deploy:
+  commands:
+  - ls
+
+depends_on:
+  - build
+# when:
+#   tag: v*

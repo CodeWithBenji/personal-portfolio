@@ -1,0 +1,9 @@
+pipeline:
+  build:
+    image: node
+    environment:
+      - NODE_ENV=production
+    commands:
+      - npm install
+      - npm test
+      - npm build
