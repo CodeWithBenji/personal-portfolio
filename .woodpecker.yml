@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: node:latest
+    image: node:18-alpine
     environment:
       - NODE_ENV=production
     commands:
