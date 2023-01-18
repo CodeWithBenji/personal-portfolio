@@ -4,6 +4,7 @@ pipeline:
     environment:
       - NODE_ENV=production
     commands:
+      - ls
       - npm ci
       - npm run build
 
