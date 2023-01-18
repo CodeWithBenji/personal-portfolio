@@ -13,6 +13,3 @@ pipeline:
 
 branches:
   include: [ main, feature/* ]
-
-# when:
-#   tag: v*
