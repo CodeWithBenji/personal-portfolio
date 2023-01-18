@@ -6,10 +6,6 @@ pipeline:
     commands:
       - npm install
       - npm build
-  deploy:
-    commands:
-    - ls
-
 
 branches:
   include: [ main, feature/* ]
