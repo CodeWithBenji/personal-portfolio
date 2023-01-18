@@ -1,8 +1,8 @@
 pipeline:
   build:
     image: node:lts-hydrogen
-    environment:
-      - NODE_ENV=production
+    # environment:
+    #   - NODE_ENV=production
     commands:
       - ls
       - npm install
