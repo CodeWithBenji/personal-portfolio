@@ -6,7 +6,7 @@ pipeline:
     commands:
       - ls
       - npm install
-      - ls
+      - ls node_modules
       - npm run build
 
 branches:
