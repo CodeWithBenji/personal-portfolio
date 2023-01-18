@@ -7,8 +7,8 @@ pipeline:
       - npm install
       - npm build
   deploy:
-  commands:
-  - ls
+    commands:
+    - ls
 
 
 branches:
