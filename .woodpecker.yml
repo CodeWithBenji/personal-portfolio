@@ -9,9 +9,10 @@ pipeline:
       - ls node_modules
       - npm run build
   deploy:
-  image:
-    name: gcr.io/kaniko-project/executor:debug
+    image: docker
     commands:
-      - ls
+      - docker build .
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
 branches:
   include: [ main, feature/* ]
