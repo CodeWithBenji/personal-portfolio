@@ -5,7 +5,7 @@ pipeline:
       - NODE_ENV=production
     commands:
       - npm install
-      - npm build
+      - npm run build
 
 branches:
   include: [ main, feature/* ]
